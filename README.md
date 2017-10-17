@@ -12,8 +12,8 @@
 3. สร้าง Launch configuration โดยให้ใช้ AMI ที่สร้างไว้ในข้อที่ 1. พร้อมทั้ง Enable CloudWatch monitoring บน instance ที่จะ launch จาก configuration นี้ด้วย
 4. สร้าง Auto Scaling Group ให้มีจำนวนเริ่มต้น 2 instances และให้รับ traffic จาก Target group ของ Load balancer ที่สร้างไว้ในข้อ 2.
 5. ให้ Auto Scaling Group ในข้อ 4. ปรับจำนวน instance ใน Group ตั้งแต่ 2 ถึง 10 instances ตาม Scaling Policies ดังต่อไปนี้
---* Increase Group Size ให้เพิ่ม 1 instance เมื่อ average CPU Utilization >= 70% ต่อเนื่องกันอย่างน้อย 1 นาที ตั้ง Alarm ด้วย (ตั้งเวลา warm up 60s)
---* Decrease Group Size ให้ลด 1 instance เมื่อ average CPU Utilization <= 20% ต่อเนื่องกันอย่างน้อย 1 นาที ตั้ง Alarm ด้วย 
+* Increase Group Size ให้เพิ่ม 1 instance เมื่อ average CPU Utilization >= 70% ต่อเนื่องกันอย่างน้อย 1 นาที ตั้ง Alarm ด้วย (ตั้งเวลา warm up 60s)
+* Decrease Group Size ให้ลด 1 instance เมื่อ average CPU Utilization <= 20% ต่อเนื่องกันอย่างน้อย 1 นาที ตั้ง Alarm ด้วย 
 6. ทดสอบการทำงานของ Autoscaling โดยใช้ Load Test Feature ของ AWS หรือใช้ tools อื่นๆ เช่น ApacheBench, Siege หรือ Locust.io
 7. อัดคลิปวีดีโอที่กระชับและได้ใจความ (ไม่ควรเกิน 30 นาที) อธิบายหรือแสดงวิธีการทำขั้นตอนที่ 1-5 พอสังเขป และ demo การทำงานของ Load balancer และ Autoscaling group ว่าสามารถใช้ปรับจำนวน Server ใน Account ของตนเองได้จริง
 8. Extra Credit 15% สำหรับน.ศ.ที่ใช้ AWS SDK หรือ Terraform เขียนสคริปต์ automate ขั้นตอนในข้อ 3.-5. (ขั้นตอนละ 5%)
