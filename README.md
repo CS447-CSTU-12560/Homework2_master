@@ -1,5 +1,5 @@
 # Homework 2 Create a Load-Balanced Cluster with Auto Scaling
-**กำหนดส่ง:** วันจันทร์ที่ 6 พฤศจิกายน 2560 เวลา 23.30น.
+**กำหนดส่ง:** วันจันทร์ที่ 13 พฤศจิกายน 2560 เวลา 23.30น.
 ![alt text](https://image.slidesharecdn.com/005elasticityandmanagementtoolssjcole-161115000022/95/awsome-day-2016-module-5-aws-elasticity-and-management-tools-2-638.jpg?cb=1479168263)
 
 **วัตถุประสงค์:** เพื่อให้น.ศ.ได้ฝึกปฏิบัติทักษะที่ต้องใช้ในการทำ Horizontal Scaling สำหรับ Application Server 
