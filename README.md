@@ -16,7 +16,7 @@
 * Decrease Group Size ให้ลด 1 instance เมื่อ average CPU Utilization <= 20% ต่อเนื่องกันอย่างน้อย 1 นาที ตั้ง Alarm ด้วย 
 6. ทดสอบการทำงานของ Autoscaling โดยใช้ Load Test Feature ของ AWS หรือใช้ tools อื่นๆ เช่น ApacheBench, Siege หรือ Locust.io
 7. อัดคลิปวีดีโอที่กระชับและได้ใจความ (ไม่ควรเกิน 30 นาที) อธิบายหรือแสดงวิธีการทำขั้นตอนที่ 1-5 พอสังเขป และ demo การทำงานของ Load balancer และ Autoscaling group ว่าสามารถใช้ปรับจำนวน Server ใน Account ของตนเองได้จริง
-8. Extra Credit 15% สำหรับน.ศ.ที่ใช้ AWS SDK หรือ Terraform เขียนสคริปต์ automate ขั้นตอนในข้อ 3.-5. (ขั้นตอนละ 5%)
+8. Extra Credit 30% สำหรับน.ศ.ที่ใช้ AWS SDK หรือ Terraform เขียนสคริปต์ automate ขั้นตอนในข้อ 3.-5. (ขั้นตอนละ 10%)
 5. ส่งคลิปวีดีโอ และไฟล์ที่เกี่ยวข้องทั้งหมด (กรณีที่ทำ extra credit) ที่ HW2 Individual Repo ของนักศึกษาเอง
 
 **เกณฑ์การตรวจคลิปวีดีโอ:**
