@@ -22,7 +22,7 @@
 **เกณฑ์การตรวจคลิปวีดีโอ:**
 * AMI 10%
 * Setup process 2. to 5. 50%
-* Scaling demo 40% (แบ่งเป็นวิธีการ Deploy 10%, เริ่มการท างานของ instance และ hardware ที่ใช้ 5%, demo 40%)
+* Scaling demo 40% 
 
 **แหล่งอ้างอิง:**
 * http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html
