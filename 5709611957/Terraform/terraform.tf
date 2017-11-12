@@ -52,16 +52,16 @@ resource "aws_autoscaling_group" "asgn2_scaling" {
 
 resource "aws_autoscaling_policy" "asgn2_cpu_up" {
 	policy_type = "StepScaling"
-    name = "cpu_up"
+   	name = "cpu_up"
 	adjustment_type = "ChangeInCapacity"
-    metric_aggregation_type = "Average"
+	metric_aggregation_type = "Average"
 	estimated_instance_warmup = 60
-    autoscaling_group_name = "${aws_autoscaling_group.asgn2_scaling.name}"
+   	autoscaling_group_name = "${aws_autoscaling_group.asgn2_scaling.name}"
 
-    step_adjustment {
-        metric_interval_lower_bound = 1.0
-        scaling_adjustment = 1
-    }
+    	step_adjustment {
+        	metric_interval_lower_bound = 1.0
+        	scaling_adjustment = 1
+    	}
 }
 
 resource "aws_cloudwatch_metric_alarm" "asgn2_cpu_alarm_up" {
@@ -84,16 +84,16 @@ resource "aws_cloudwatch_metric_alarm" "asgn2_cpu_alarm_up" {
 
 resource "aws_autoscaling_policy" "asgn2_cpu_down" {
 	policy_type = "StepScaling"
-    name = "cpu_down"
+    	name = "cpu_down"
 	adjustment_type = "ChangeInCapacity"
-    metric_aggregation_type = "Average"
+    	metric_aggregation_type = "Average"
 	estimated_instance_warmup = 60
-    autoscaling_group_name = "${aws_autoscaling_group.asgn2_scaling.name}"
+    	autoscaling_group_name = "${aws_autoscaling_group.asgn2_scaling.name}"
 
-    step_adjustment {
-        metric_interval_lower_bound = 1.0
-        scaling_adjustment = -1
-    }
+    	step_adjustment {
+        	metric_interval_lower_bound = 1.0
+        	scaling_adjustment = -1
+    	}
 }
 
 resource "aws_cloudwatch_metric_alarm" "asgn2_cpu_alarm_down" {
@@ -111,6 +111,6 @@ resource "aws_cloudwatch_metric_alarm" "asgn2_cpu_alarm_down" {
     }
 
     alarm_description = "asgn2 average cpu utilization <= 20%"
-    alarm_actions = ["${aws_autoscaling_policy.asgn2_cpu_up.arn}"]
+    alarm_actions = ["${aws_autoscaling_policy.asgn2_cpu_down.arn}"]
 }
 
