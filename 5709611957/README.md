@@ -1,5 +1,5 @@
 # CS447 (Operating System 2)
-> Vedio Demo: comming soon 
+> Vedio Demo: https://youtu.be/LiiOx8zFlew
 ## Load balancer with auto Scaling by using Terraform
 > - Go to directory you place terraform.tf file.<br />
 > - Deploy this command.
