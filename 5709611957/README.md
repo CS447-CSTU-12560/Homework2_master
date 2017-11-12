@@ -17,7 +17,7 @@ terraform apply
 > - Go to directory you place load.py file.<br />
 > - Deploy this command and place your url.
 ```
-locust --host=${Your url}
+locust -f load.py --host=${Your url}
 ```
 > if you don't have locust.<br />
 > install python and then.<br />
