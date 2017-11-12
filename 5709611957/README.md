@@ -1,5 +1,8 @@
 # CS447 (Operating System 2)
 > Vedio Demo: https://youtu.be/LiiOx8zFlew
+```
+**ในวีดีโอผมลืมอธิบายว่า locust ผมปรับให้ user ทำงานเร็วสุดเท่าที่จะทำได้การที่รับ req ได้ไวขึ้นหมายความว่าประสิทธิภาพของเว็ปเพิ่มขึ้น**
+```
 ## Load balancer with auto Scaling by using Terraform
 > - Go to directory you place terraform.tf file.<br />
 > - Deploy this command.
