@@ -110,7 +110,7 @@ resource "aws_cloudwatch_metric_alarm" "asgn2_cpu_alarm_down" {
         AutoScalingGroupName = "${aws_autoscaling_group.asgn2_scaling.name}"
     }
 
-    alarm_description = "asgn2 average cpu utilization >= 70%"
+    alarm_description = "asgn2 average cpu utilization <= 20%"
     alarm_actions = ["${aws_autoscaling_policy.asgn2_cpu_up.arn}"]
 }
 
